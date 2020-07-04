@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link, } from "react-router-dom"
 import fire from './components/fire';
 import notify from './components/toastify.jsx';
 import Home from './components/home';
-import scrollToTop from './components/scrollToTop';
+import ScrollToTop from './components/scrollToTop';
 
 
 
@@ -54,15 +54,16 @@ class App extends Component {
         <div>
           <header>
             <nav>
-              <Link to="/" onClick={scrollToTop} >
+              <Link to="/" onClick={ScrollToTop} >
                 <img src="Images/noheader.png" alt="Logo Novi Orbis"
                 /></Link>
               <h1 id="nav-tittle" >NOVI ORBIS</h1>
               <ul className="nav-grid">
                 <li>
-                  <Link to="/" className="btn-nav" onClick={scrollToTop} > home </Link>
+                  <Link to="/" className="btn-nav" onClick={ScrollToTop} > home </Link>
                 </li>
-                <li > <Link to="/podcast" className="btn-nav" onClick={scrollToTop}  > podcast </Link> </li>
+                <li > 
+                  <Link to="/podcast" className="btn-nav" onClick={ScrollToTop}  > podcast </Link> </li>
               </ul>
               <a href="https://www.facebook.com/noviorbisrec/">
                 <img
@@ -99,7 +100,7 @@ class App extends Component {
               <Home />
             </Route>
             <Route path='/podcast'>
-              <Podcast />
+              <Podcast/>
             </Route>
           </Switch>
           <footer>

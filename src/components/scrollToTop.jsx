@@ -1,4 +1,4 @@
-function scrollToTop() {
+function ScrollToTop() {
     window.scrollTo({
       top: 0,
       behavior: "smooth"
@@ -6,4 +6,4 @@ function scrollToTop() {
   }
 
 
-export default scrollToTop;
+export default ScrollToTop;
