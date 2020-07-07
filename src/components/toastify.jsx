@@ -3,11 +3,9 @@ import 'react-toastify/dist/ReactToastify.css'
 
 toast.configure()
 const notify = () => {
-  toast.dark('🛸💨💨 Thanks for subscribing !!',{
+  toast.dark('🛸💨💨 Thanks for subscribing !!', {
     position: toast.POSITION.BOTTOM_RIGHT
   })
 }
-
-
 
 export default notify;

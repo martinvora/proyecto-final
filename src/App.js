@@ -7,28 +7,18 @@ import notify from './components/toastify.jsx';
 import Home from './components/home';
 import ScrollToTop from './components/scrollToTop';
 
-
-
-
 class App extends Component {
-
-
-
 
   pushAndNotify = (e) => {
     e.preventDefault();
     notify(e);
     this.handleSubmit(e);
 
-
-
   }
-
 
   state = {
     text: ""
   }
-
 
   handleText = e => {
     this.setState({
@@ -45,9 +35,6 @@ class App extends Component {
 
   }
 
-
-
-
   render() {
     return (
       <Router>
@@ -62,7 +49,7 @@ class App extends Component {
                 <li>
                   <Link to="/" className="btn-nav" onClick={ScrollToTop} > home </Link>
                 </li>
-                <li > 
+                <li >
                   <Link to="/podcast" className="btn-nav" onClick={ScrollToTop}  > podcast </Link> </li>
               </ul>
               <a href="https://www.facebook.com/noviorbisrec/">
@@ -100,7 +87,7 @@ class App extends Component {
               <Home />
             </Route>
             <Route path='/podcast'>
-              <Podcast/>
+              <Podcast />
             </Route>
           </Switch>
           <footer>

@@ -1,286 +1,269 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-  }
-  
-  html {
-    background: black;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
 
+html {
+  background: black;
+}
 
-  header {
-    grid-area: header;
-    color: white;
-    background: black;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    width: 100%;
-  }
-  /* Body */
-  .conteiner-grid {
-    display: grid;
-    color: white;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5 1fr max-content;
-    grid-template-areas:
-      "header  "
-      "content "
-      "footer ";
-    min-height: 100vh;
-  }
-  /* Nav */
-  nav {
-    display: grid;
-    grid-template-columns: 85px max-content 1fr repeat(4, 20px);
-    padding-right: 15px;
-    column-gap: 10px;
-    align-items: center;
-  }
-  
-  .nav-grid {
-    list-style: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    text-align: center;
-  }
+header {
+  grid-area: header;
+  color: white;
+  background: black;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+/* Body */
+.conteiner-grid {
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5 1fr max-content;
+  grid-template-areas:
+    "header  "
+    "content "
+    "footer ";
+  min-height: 100vh;
+}
+/* Nav */
+nav {
+  display: grid;
+  grid-template-columns: 85px max-content 1fr repeat(4, 20px);
+  padding-right: 15px;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.nav-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  text-align: center;
+}
 .btn-nav:visited {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
-
 #nav-tittle {
-    font-family: "Oswald", sans-serif;
-  }
- ul > a, 
- li {
-    font-family: "Oxygen", sans-serif;
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-  ul > a,
-  li:hover {
-    text-decoration: underline white;
-  }
-  
-  ul > a,
-  li:visited {
-    color:white;
-    text-decoration: none;
-  }
+  font-family: "Oswald", sans-serif;
+}
+ul > a,
+li {
+  font-family: "Oxygen", sans-serif;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+ul > a,
+li:hover {
+  text-decoration: underline white;
+}
 
-  
-  .social-icons {
-    text-decoration: none;
-  }
-  /* Main */
-  main {
-    grid-area: content;
-    background: black;
-  }
-  .conteiner-grid-main {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 600px 1fr 1fr;
-  }
-  
-  .main-content-text {
-    display: grid;
-    align-self: center;
-    text-align: center;
-    padding-right: 5px;
-    grid-area: 1/2;
-    animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-    animation-delay: 1s;
-  }
- 
-  /* Contact Us */
+ul > a,
+li:visited {
+  color: white;
+  text-decoration: none;
+}
 
-  #contact-us {
-    align-items: baseline;
-    grid-column: span 2;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-    animation-delay: 1s;
-  }
-  
-  #email {
-    text-decoration: underline;
-    font-family: "Oxygen", sans-serif;
-    color: white;
-  }
-  #email:visited {
-    text-decoration: none;
-    text-decoration-color: white;
-    color: white;
-  }
-  /* Footer */
-  footer {
-    box-sizing: content-box;
-    display: grid;
-    grid-area: footer;
-    background: rgb(44, 44, 44);
-    text-align: center;
-    align-items: center;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
-  }
-  label {
-    font-size: 1rem;
-    text-align: center;
-    font-family: "Oxygen", sans-serif;
+.social-icons {
+  text-decoration: none;
+}
+/* Main */
+main {
+  grid-area: content;
+  background: black;
+}
+.conteiner-grid-main {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 600px 1fr 1fr;
+}
 
-  }
+.main-content-text {
+  display: grid;
+  align-self: center;
+  text-align: center;
+  padding-right: 5px;
+  grid-area: 1/2;
+  animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation-delay: 1s;
+}
 
-  .button-submit{
-    background:    #000000;
-    background:    linear-gradient(#2c2c2c, #444444);
-    border-radius: 2px;
-    box-shadow:    0 0px #000000;
-    padding:1px 5px 1px 5px ;
-    margin-left: 10px;
-    color:         #ffffff;
-    display:       inline-block;
-    font:          normal normal 16px/1 "Ubuntu", sans-serif;
-    text-align:    center;
-
-  }
-  /*Fonts & sizes*/
-  h2 {
-    font-size: 3rem;
-    font-family: "Oswald", sans-serif;
-  }
-  p {
-    font-size: 1.5rem;
-    font-family: "Oxygen", sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  /* Effects*/
-  
-  @keyframes text-focus-in {
-    0% {
-      filter: blur(12px);
-      opacity: 0;
-    }
-    100% {
-      filter: blur(0px);
-      opacity: 1;
-    }
-  }
-  
-  /* MEDIA QUERY Mobile -Portrait*/
-  
-  @media (max-width: 575px) and (orientation: portrait) {
-    nav {
-      column-gap: 0px;
-      padding-right: 2%;
-      grid-template-columns: 85px 1fr repeat(4, 20px);
-    }
-    .conteiner-grid {
-      grid-template-rows: max-content 1fr max-content;
-    }
-  
-    .conteiner-grid-main {
-      grid-template-columns: 100vw;
-      grid-template-rows: 1fr 1fr max-content;
-      display: grid;
-      text-align: center;
-      padding-right: 5px;
-    }
-    .main-content-text {
-      height: 50vh;
-      grid-area: 1;
-      align-content: center;
-      padding-bottom: 5px;
-      margin-bottom: 40px;
-    }
-  
-    .contact-text {
-      font-size: 1.5rem;
-    }
-    p {
-      font-size: 1rem;
-      padding: 5px;
-    }
-    #nav-tittle {
-      display: none;
-    }
-  }
-
-  /*index section*/
+/*index section*/
 
 /* Main img */
 
 #image-spacehd {
-    width: 100%;
-    height: 550px;
-    grid-area: content;
-  }
-  /* Logo novi orbis*/
-  
-  #logo-content-image {
-    width: 100%;
-    height: 600px;
-  }
-  
-  /* MEDIA QUERY Mobile -Portrait*/
-  
-  @media (max-width: 575px) and (orientation: portrait) {
-    #contact-us {
-      grid-column: 1;
-    }
-    #image-spacehd {
-      display: none;
-    }
-    #logo-content-image {
-      display: none;
-    }
-  }
+  width: 100%;
+  height: 550px;
+  grid-area: content;
+}
+/* Logo novi orbis*/
 
-  /* Podcast-Section */
-  
-  /* Podcast-Tittle*/
+#logo-content-image {
+  width: 100%;
+  height: 600px;
+}
+
+/* Podcast-Section */
+
+/* Podcast-Tittle*/
+
 .tittle-pages {
-    display: grid;
-    grid-area: content;
+  display: grid;
+  grid-area: content;
+  width: 100%;
+  height: 85vh;
+  font-family: "Oswald", sans-serif;
+  font-size: 10rem;
+  text-align: center;
+  align-content: center;
+  animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+/* Contact Us */
+
+#contact-us {
+  align-items: baseline;
+  grid-column: span 2;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation-delay: 1s;
+}
+
+#email {
+  text-decoration: underline;
+  font-family: "Oxygen", sans-serif;
+  color: white;
+}
+#email:visited {
+  text-decoration: none;
+  text-decoration-color: white;
+  color: white;
+}
+/* Footer */
+footer {
+  box-sizing: content-box;
+  display: grid;
+  grid-area: footer;
+  background: rgb(44, 44, 44);
+  text-align: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+}
+label {
+  font-size: 1rem;
+  text-align: center;
+  font-family: "Oxygen", sans-serif;
+}
+
+.button-submit {
+  background: #000000;
+  background: linear-gradient(#2c2c2c, #444444);
+  border-radius: 2px;
+  box-shadow: 0 0px #000000;
+  padding: 1px 5px 1px 5px;
+  margin-left: 10px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal normal 16px/1 "Ubuntu", sans-serif;
+  text-align: center;
+}
+/*Fonts & sizes*/
+h2 {
+  font-size: 3rem;
+  font-family: "Oswald", sans-serif;
+}
+p {
+  font-size: 1.5rem;
+  font-family: "Oxygen", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Effects*/
+
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/* MEDIA QUERY Mobile -Portrait*/
+
+@media (max-width: 575px) and (orientation: portrait) {
+  .tittle-pages {
     width: 100%;
-    height: 85vh;
+    height: 60vh;
     font-family: "Oswald", sans-serif;
-    font-size: 10rem;
+    font-size: 5rem;
     text-align: center;
     align-content: center;
-    animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   }
-  
-  
-  /* MEDIA QUERY Mobile -Portrait*/
-  
-  @media (max-width: 575px) and (orientation: portrait) {
-    .tittle-pages {
-      width: 100%;
-      height: 60vh;
-      font-family: "Oswald", sans-serif;
-      font-size: 5rem;
-      text-align: center;
-      align-content: center;
-    }
-  
-    #contact-us {
-      grid-column: 1;
-    }
+
+  #contact-us {
+    grid-column: 1;
   }
-  
+  #contact-us {
+    grid-column: 1;
+  }
+  #image-spacehd {
+    display: none;
+  }
+  #logo-content-image {
+    display: none;
+  }
+  nav {
+    column-gap: 0px;
+    padding-right: 2%;
+    grid-template-columns: 85px 1fr repeat(4, 20px);
+  }
+  .conteiner-grid {
+    grid-template-rows: max-content 1fr max-content;
+  }
+
+  .conteiner-grid-main {
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 1fr max-content;
+    display: grid;
+    text-align: center;
+    padding-right: 5px;
+  }
+  .main-content-text {
+    height: 50vh;
+    grid-area: 1;
+    align-content: center;
+    padding-bottom: 5px;
+    margin-bottom: 40px;
+  }
+
+  .contact-text {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+    padding: 5px;
+  }
+  #nav-tittle {
+    display: none;
+  }
+}
